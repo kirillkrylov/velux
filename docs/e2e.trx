@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8dbe8a38-6543-4ca2-83a7-1135839087c2" name="k.krylov@K-KRYLOV-NB 2026-09-07 07:17:30" runUser="TSCRM\k.krylov" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-07T07:17:30.3951153+02:00" queuing="2026-09-07T07:17:30.3951156+02:00" start="2026-09-07T07:17:22.0275141+02:00" finish="2026-09-07T07:17:39.8561717+02:00" />
+  <TestSettings name="default" id="a9b1ae1c-1fc7-4a86-92cc-77bbd5b085f0">
+    <Deployment runDeploymentRoot="k.krylov_K-KRYLOV-NB_2026-09-07_07_17_30" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="93db32fe-8689-4e9b-9253-4345831415db" testId="5e9aa03b-4e8e-623f-b7f6-ead3c863f883" testName="ContactCreation(&quot;person+tag@gmail.com&quot;,False)" computerName="K-KRYLOV-NB" duration="00:00:00.2621540" startTime="2026-09-07T07:17:31.8076079+02:00" endTime="2026-09-07T07:17:32.0697617+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93db32fe-8689-4e9b-9253-4345831415db" />
+    <UnitTestResult executionId="25b4a902-6fdb-4620-900b-ffe720652d14" testId="309d50ff-2f2e-6831-6a65-0791b7fee720" testName="CommunicationNumberOnlyUpdate(&quot;new@example.org&quot;,True)" computerName="K-KRYLOV-NB" duration="00:00:00.6038510" startTime="2026-09-07T07:17:30.3756014+02:00" endTime="2026-09-07T07:17:30.9794525+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25b4a902-6fdb-4620-900b-ffe720652d14" />
+    <UnitTestResult executionId="79677d4b-3e3c-4d38-b037-7a7c4cbc5144" testId="92657026-c849-a140-504a-9efe8cf34973" testName="LookupIsRegisteredForStandardAdministration" computerName="K-KRYLOV-NB" duration="00:00:00.1700589" startTime="2026-09-07T07:17:38.5577221+02:00" endTime="2026-09-07T07:17:38.7277814+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79677d4b-3e3c-4d38-b037-7a7c4cbc5144" />
+    <UnitTestResult executionId="cc6007c9-d569-4503-be47-caf15fcfaf19" testId="f57174e7-add9-9749-3a9a-7d5cce8e4ee9" testName="ContactCreation(&quot;Person@GMAIL.COM&quot;,False)" computerName="K-KRYLOV-NB" duration="00:00:00.2799370" startTime="2026-09-07T07:17:31.5276014+02:00" endTime="2026-09-07T07:17:31.8075381+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc6007c9-d569-4503-be47-caf15fcfaf19" />
+    <UnitTestResult executionId="0096dc0e-6c33-43b3-a41c-89bc5cf9d99e" testId="b8d56de3-8627-a7dc-b402-2898bb5f6f8c" testName="ContactCreation(&quot;person@sub.gmail.com&quot;,True)" computerName="K-KRYLOV-NB" duration="00:00:00.4773420" startTime="2026-09-07T07:17:33.0971576+02:00" endTime="2026-09-07T07:17:33.5744999+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0096dc0e-6c33-43b3-a41c-89bc5cf9d99e" />
+    <UnitTestResult executionId="969e2f81-1776-421d-b554-c457141bb571" testId="bad59a4b-070c-d18c-03f3-93fd9937545d" testName="ContactEmailUpdate(&quot;&quot;,True)" computerName="K-KRYLOV-NB" duration="00:00:00.5554400" startTime="2026-09-07T07:17:35.1077506+02:00" endTime="2026-09-07T07:17:35.6631923+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="969e2f81-1776-421d-b554-c457141bb571" />
+    <UnitTestResult executionId="40610722-fc49-4503-a418-826e920168cb" testId="a2d55f1a-69d8-233d-2aad-33878132dd3a" testName="DataServiceReturnsActionableValidationMessage" computerName="K-KRYLOV-NB" duration="00:00:00.3623890" startTime="2026-09-07T07:17:35.6634634+02:00" endTime="2026-09-07T07:17:36.0258530+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40610722-fc49-4503-a418-826e920168cb" />
+    <UnitTestResult executionId="bff21ade-416f-4fc2-b8e1-6a18a5dd798d" testId="ba2524f9-4b2e-714a-848f-d86c67890d36" testName="EmailCommunicationCreation(&quot;person@yahoo.com&quot;,False)" computerName="K-KRYLOV-NB" duration="00:00:00.4321690" startTime="2026-09-07T07:17:36.4408514+02:00" endTime="2026-09-07T07:17:36.8730216+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bff21ade-416f-4fc2-b8e1-6a18a5dd798d" />
+    <UnitTestResult executionId="8894d61e-df9f-4919-b094-ff4f512e4a2f" testId="679633e0-3b57-d3a8-e101-ccd75844f3fd" testName="ContactCreation(&quot;person@notgmail.com&quot;,True)" computerName="K-KRYLOV-NB" duration="00:00:00.4935030" startTime="2026-09-07T07:17:32.6036026+02:00" endTime="2026-09-07T07:17:33.0971065+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8894d61e-df9f-4919-b094-ff4f512e4a2f" />
+    <UnitTestResult executionId="f98f5c9e-9b3f-43b6-9e47-467fcc557df7" testId="eb874532-8229-9b5d-7023-47e2f7ab0945" testName="CommunicationNumberOnlyUpdate(&quot;bad@gmail.com&quot;,False)" computerName="K-KRYLOV-NB" duration="00:00:02.0049090" startTime="2026-09-07T07:17:28.3682232+02:00" endTime="2026-09-07T07:17:30.3729937+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f98f5c9e-9b3f-43b6-9e47-467fcc557df7" />
+    <UnitTestResult executionId="47ca36cd-42d9-4a40-b6c1-41f2f12bb7f6" testId="488a002e-f45d-378d-54f1-14505256891d" testName="NonEmailCommunicationIsUnaffectedAndCannotBeChangedToBlockedEmail" computerName="K-KRYLOV-NB" duration="00:00:00.4788250" startTime="2026-09-07T07:17:39.3245352+02:00" endTime="2026-09-07T07:17:39.8033613+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47ca36cd-42d9-4a40-b6c1-41f2f12bb7f6" />
+    <UnitTestResult executionId="12c03848-8585-4387-9544-0871554d8a8b" testId="b5f06998-bfd3-e4c7-519b-851d2c3ac033" testName="ExistingBlockedEmailPreventsUnrelatedContactUpdate(False)" computerName="K-KRYLOV-NB" duration="00:00:00.6216130" startTime="2026-09-07T07:17:37.2878940+02:00" endTime="2026-09-07T07:17:37.9095082+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12c03848-8585-4387-9544-0871554d8a8b" />
+    <UnitTestResult executionId="c291f9dd-0989-4014-8923-46dc0f0832b4" testId="f1adf357-6804-aff6-6a82-51886d9ecfd1" testName="ContactCreation(&quot;person@yahoo.com&quot;,False)" computerName="K-KRYLOV-NB" duration="00:00:00.2596140" startTime="2026-09-07T07:17:31.2679386+02:00" endTime="2026-09-07T07:17:31.5275519+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c291f9dd-0989-4014-8923-46dc0f0832b4" />
+    <UnitTestResult executionId="dfb33eaa-2f69-4b7a-a588-fcfe143280a4" testId="96cefb07-299e-2af4-1557-b7951d77c226" testName="EmailCommunicationCreation(&quot;person@gmail.com&quot;,False)" computerName="K-KRYLOV-NB" duration="00:00:00.4147660" startTime="2026-09-07T07:17:36.0259527+02:00" endTime="2026-09-07T07:17:36.4407192+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dfb33eaa-2f69-4b7a-a588-fcfe143280a4" />
+    <UnitTestResult executionId="9d2b0b9e-97df-4643-9b7a-178497f752b4" testId="a8f7ec06-3e74-ca63-de9d-a71017621932" testName="ContactCreation(&quot;person@example.org&quot;,True)" computerName="K-KRYLOV-NB" duration="00:00:00.5337160" startTime="2026-09-07T07:17:32.0698276+02:00" endTime="2026-09-07T07:17:32.6035439+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d2b0b9e-97df-4643-9b7a-178497f752b4" />
+    <UnitTestResult executionId="2ca7706b-0737-45f4-8d8f-4cd0a46c47ef" testId="0d4cb8e8-263b-a4b6-8258-7f17b3cb5511" testName="ExistingBlockedEmailPreventsUnrelatedContactUpdate(True)" computerName="K-KRYLOV-NB" duration="00:00:00.6480050" startTime="2026-09-07T07:17:37.9095449+02:00" endTime="2026-09-07T07:17:38.5575511+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ca7706b-0737-45f4-8d8f-4cd0a46c47ef" />
+    <UnitTestResult executionId="76c8aad9-afab-4423-986d-5fc566c30ea9" testId="386f8b3d-50df-37d3-b261-be76164c41db" testName="ContactCreation(&quot;&quot;,True)" computerName="K-KRYLOV-NB" duration="00:00:00.4311520" startTime="2026-09-07T07:17:33.5745810+02:00" endTime="2026-09-07T07:17:34.0057341+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="76c8aad9-afab-4423-986d-5fc566c30ea9" />
+    <UnitTestResult executionId="b08b9645-2be4-4ffe-b275-8c04b60fb5d6" testId="bf826637-84dd-921b-8a3e-6c0f49f89887" testName="ContactEmailUpdate(&quot;person@gmail.com&quot;,False)" computerName="K-KRYLOV-NB" duration="00:00:00.5455460" startTime="2026-09-07T07:17:34.0058864+02:00" endTime="2026-09-07T07:17:34.5514324+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b08b9645-2be4-4ffe-b275-8c04b60fb5d6" />
+    <UnitTestResult executionId="b9e2c634-de13-4477-8b1b-9c76af5fc6f0" testId="8927ed2d-fa82-696e-52d4-0172a28e4688" testName="EmailCommunicationCreation(&quot;person@example.org&quot;,True)" computerName="K-KRYLOV-NB" duration="00:00:00.4146680" startTime="2026-09-07T07:17:36.8730676+02:00" endTime="2026-09-07T07:17:37.2877368+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b9e2c634-de13-4477-8b1b-9c76af5fc6f0" />
+    <UnitTestResult executionId="e7eb1fde-301b-44fc-b101-aa1761b6df73" testId="bd453040-6852-8670-a71c-45891687e919" testName="LookupRowChangesTakeEffectWithoutRestart" computerName="K-KRYLOV-NB" duration="00:00:00.5966600" startTime="2026-09-07T07:17:38.7278269+02:00" endTime="2026-09-07T07:17:39.3244883+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7eb1fde-301b-44fc-b101-aa1761b6df73" />
+    <UnitTestResult executionId="8e1244b5-d2f4-428a-9f3b-7c01b73ead20" testId="1057af5b-c0ac-4335-61d0-ccefb8222d50" testName="ContactCreation(&quot;person@gmail.com&quot;,False)" computerName="K-KRYLOV-NB" duration="00:00:00.2868270" startTime="2026-09-07T07:17:30.9810639+02:00" endTime="2026-09-07T07:17:31.2678903+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e1244b5-d2f4-428a-9f3b-7c01b73ead20" />
+    <UnitTestResult executionId="291669b2-a06c-4ee0-9dae-33b0af9aa914" testId="d05fe5c5-fc52-27a6-2253-f7f936abe1d2" testName="ContactEmailUpdate(&quot;new@example.org&quot;,True)" computerName="K-KRYLOV-NB" duration="00:00:00.5562130" startTime="2026-09-07T07:17:34.5514952+02:00" endTime="2026-09-07T07:17:35.1077083+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="291669b2-a06c-4ee0-9dae-33b0af9aa914" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="EmailCommunicationCreation(&quot;person@yahoo.com&quot;,False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="ba2524f9-4b2e-714a-848f-d86c67890d36">
+      <Execution id="bff21ade-416f-4fc2-b8e1-6a18a5dd798d" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="EmailCommunicationCreation(&quot;person@yahoo.com&quot;,False)" />
+    </UnitTest>
+    <UnitTest name="ContactCreation(&quot;person@notgmail.com&quot;,True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="679633e0-3b57-d3a8-e101-ccd75844f3fd">
+      <Execution id="8894d61e-df9f-4919-b094-ff4f512e4a2f" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactCreation(&quot;person@notgmail.com&quot;,True)" />
+    </UnitTest>
+    <UnitTest name="DataServiceReturnsActionableValidationMessage" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="a2d55f1a-69d8-233d-2aad-33878132dd3a">
+      <Execution id="40610722-fc49-4503-a418-826e920168cb" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="DataServiceReturnsActionableValidationMessage" />
+    </UnitTest>
+    <UnitTest name="ContactCreation(&quot;person@sub.gmail.com&quot;,True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="b8d56de3-8627-a7dc-b402-2898bb5f6f8c">
+      <Execution id="0096dc0e-6c33-43b3-a41c-89bc5cf9d99e" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactCreation(&quot;person@sub.gmail.com&quot;,True)" />
+    </UnitTest>
+    <UnitTest name="ContactCreation(&quot;person@yahoo.com&quot;,False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="f1adf357-6804-aff6-6a82-51886d9ecfd1">
+      <Execution id="c291f9dd-0989-4014-8923-46dc0f0832b4" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactCreation(&quot;person@yahoo.com&quot;,False)" />
+    </UnitTest>
+    <UnitTest name="ContactEmailUpdate(&quot;&quot;,True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="bad59a4b-070c-d18c-03f3-93fd9937545d">
+      <Execution id="969e2f81-1776-421d-b554-c457141bb571" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactEmailUpdate(&quot;&quot;,True)" />
+    </UnitTest>
+    <UnitTest name="LookupRowChangesTakeEffectWithoutRestart" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="bd453040-6852-8670-a71c-45891687e919">
+      <Execution id="e7eb1fde-301b-44fc-b101-aa1761b6df73" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="LookupRowChangesTakeEffectWithoutRestart" />
+    </UnitTest>
+    <UnitTest name="LookupIsRegisteredForStandardAdministration" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="92657026-c849-a140-504a-9efe8cf34973">
+      <Execution id="79677d4b-3e3c-4d38-b037-7a7c4cbc5144" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="LookupIsRegisteredForStandardAdministration" />
+    </UnitTest>
+    <UnitTest name="ContactEmailUpdate(&quot;new@example.org&quot;,True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="d05fe5c5-fc52-27a6-2253-f7f936abe1d2">
+      <Execution id="291669b2-a06c-4ee0-9dae-33b0af9aa914" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactEmailUpdate(&quot;new@example.org&quot;,True)" />
+    </UnitTest>
+    <UnitTest name="ContactCreation(&quot;person@example.org&quot;,True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="a8f7ec06-3e74-ca63-de9d-a71017621932">
+      <Execution id="9d2b0b9e-97df-4643-9b7a-178497f752b4" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactCreation(&quot;person@example.org&quot;,True)" />
+    </UnitTest>
+    <UnitTest name="ContactCreation(&quot;Person@GMAIL.COM&quot;,False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="f57174e7-add9-9749-3a9a-7d5cce8e4ee9">
+      <Execution id="cc6007c9-d569-4503-be47-caf15fcfaf19" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactCreation(&quot;Person@GMAIL.COM&quot;,False)" />
+    </UnitTest>
+    <UnitTest name="ExistingBlockedEmailPreventsUnrelatedContactUpdate(True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="0d4cb8e8-263b-a4b6-8258-7f17b3cb5511">
+      <Execution id="2ca7706b-0737-45f4-8d8f-4cd0a46c47ef" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ExistingBlockedEmailPreventsUnrelatedContactUpdate(True)" />
+    </UnitTest>
+    <UnitTest name="ExistingBlockedEmailPreventsUnrelatedContactUpdate(False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="b5f06998-bfd3-e4c7-519b-851d2c3ac033">
+      <Execution id="12c03848-8585-4387-9544-0871554d8a8b" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ExistingBlockedEmailPreventsUnrelatedContactUpdate(False)" />
+    </UnitTest>
+    <UnitTest name="ContactEmailUpdate(&quot;person@gmail.com&quot;,False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="bf826637-84dd-921b-8a3e-6c0f49f89887">
+      <Execution id="b08b9645-2be4-4ffe-b275-8c04b60fb5d6" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactEmailUpdate(&quot;person@gmail.com&quot;,False)" />
+    </UnitTest>
+    <UnitTest name="NonEmailCommunicationIsUnaffectedAndCannotBeChangedToBlockedEmail" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="488a002e-f45d-378d-54f1-14505256891d">
+      <Execution id="47ca36cd-42d9-4a40-b6c1-41f2f12bb7f6" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="NonEmailCommunicationIsUnaffectedAndCannotBeChangedToBlockedEmail" />
+    </UnitTest>
+    <UnitTest name="ContactCreation(&quot;person+tag@gmail.com&quot;,False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="5e9aa03b-4e8e-623f-b7f6-ead3c863f883">
+      <Execution id="93db32fe-8689-4e9b-9253-4345831415db" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactCreation(&quot;person+tag@gmail.com&quot;,False)" />
+    </UnitTest>
+    <UnitTest name="EmailCommunicationCreation(&quot;person@example.org&quot;,True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="8927ed2d-fa82-696e-52d4-0172a28e4688">
+      <Execution id="b9e2c634-de13-4477-8b1b-9c76af5fc6f0" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="EmailCommunicationCreation(&quot;person@example.org&quot;,True)" />
+    </UnitTest>
+    <UnitTest name="CommunicationNumberOnlyUpdate(&quot;new@example.org&quot;,True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="309d50ff-2f2e-6831-6a65-0791b7fee720">
+      <Execution id="25b4a902-6fdb-4620-900b-ffe720652d14" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="CommunicationNumberOnlyUpdate(&quot;new@example.org&quot;,True)" />
+    </UnitTest>
+    <UnitTest name="ContactCreation(&quot;&quot;,True)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="386f8b3d-50df-37d3-b261-be76164c41db">
+      <Execution id="76c8aad9-afab-4423-986d-5fc566c30ea9" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactCreation(&quot;&quot;,True)" />
+    </UnitTest>
+    <UnitTest name="EmailCommunicationCreation(&quot;person@gmail.com&quot;,False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="96cefb07-299e-2af4-1557-b7951d77c226">
+      <Execution id="dfb33eaa-2f69-4b7a-a588-fcfe143280a4" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="EmailCommunicationCreation(&quot;person@gmail.com&quot;,False)" />
+    </UnitTest>
+    <UnitTest name="ContactCreation(&quot;person@gmail.com&quot;,False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="1057af5b-c0ac-4335-61d0-ccefb8222d50">
+      <Execution id="8e1244b5-d2f4-428a-9f3b-7c01b73ead20" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="ContactCreation(&quot;person@gmail.com&quot;,False)" />
+    </UnitTest>
+    <UnitTest name="CommunicationNumberOnlyUpdate(&quot;bad@gmail.com&quot;,False)" storage="f:\projects\workspaces\velux\tests\vibecodingdemo.integrationtests\bin\dev-n8\net10.0\vibecodingdemo.integrationtests.dll" id="eb874532-8229-9b5d-7023-47e2f7ab0945">
+      <Execution id="f98f5c9e-9b3f-43b6-9e47-467fcc557df7" />
+      <TestMethod codeBase="F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll" adapterTypeName="executor://nunit3testexecutor/" className="VibeCodingDemo.IntegrationTests.EmailDomainE2ETests" name="CommunicationNumberOnlyUpdate(&quot;bad@gmail.com&quot;,False)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="5e9aa03b-4e8e-623f-b7f6-ead3c863f883" executionId="93db32fe-8689-4e9b-9253-4345831415db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="309d50ff-2f2e-6831-6a65-0791b7fee720" executionId="25b4a902-6fdb-4620-900b-ffe720652d14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92657026-c849-a140-504a-9efe8cf34973" executionId="79677d4b-3e3c-4d38-b037-7a7c4cbc5144" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f57174e7-add9-9749-3a9a-7d5cce8e4ee9" executionId="cc6007c9-d569-4503-be47-caf15fcfaf19" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8d56de3-8627-a7dc-b402-2898bb5f6f8c" executionId="0096dc0e-6c33-43b3-a41c-89bc5cf9d99e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bad59a4b-070c-d18c-03f3-93fd9937545d" executionId="969e2f81-1776-421d-b554-c457141bb571" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2d55f1a-69d8-233d-2aad-33878132dd3a" executionId="40610722-fc49-4503-a418-826e920168cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ba2524f9-4b2e-714a-848f-d86c67890d36" executionId="bff21ade-416f-4fc2-b8e1-6a18a5dd798d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="679633e0-3b57-d3a8-e101-ccd75844f3fd" executionId="8894d61e-df9f-4919-b094-ff4f512e4a2f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb874532-8229-9b5d-7023-47e2f7ab0945" executionId="f98f5c9e-9b3f-43b6-9e47-467fcc557df7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="488a002e-f45d-378d-54f1-14505256891d" executionId="47ca36cd-42d9-4a40-b6c1-41f2f12bb7f6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b5f06998-bfd3-e4c7-519b-851d2c3ac033" executionId="12c03848-8585-4387-9544-0871554d8a8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f1adf357-6804-aff6-6a82-51886d9ecfd1" executionId="c291f9dd-0989-4014-8923-46dc0f0832b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96cefb07-299e-2af4-1557-b7951d77c226" executionId="dfb33eaa-2f69-4b7a-a588-fcfe143280a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8f7ec06-3e74-ca63-de9d-a71017621932" executionId="9d2b0b9e-97df-4643-9b7a-178497f752b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0d4cb8e8-263b-a4b6-8258-7f17b3cb5511" executionId="2ca7706b-0737-45f4-8d8f-4cd0a46c47ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="386f8b3d-50df-37d3-b261-be76164c41db" executionId="76c8aad9-afab-4423-986d-5fc566c30ea9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf826637-84dd-921b-8a3e-6c0f49f89887" executionId="b08b9645-2be4-4ffe-b275-8c04b60fb5d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8927ed2d-fa82-696e-52d4-0172a28e4688" executionId="b9e2c634-de13-4477-8b1b-9c76af5fc6f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bd453040-6852-8670-a71c-45891687e919" executionId="e7eb1fde-301b-44fc-b101-aa1761b6df73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1057af5b-c0ac-4335-61d0-ccefb8222d50" executionId="8e1244b5-d2f4-428a-9f3b-7c01b73ead20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d05fe5c5-fc52-27a6-2253-f7f936abe1d2" executionId="291669b2-a06c-4ee0-9dae-33b0af9aa914" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="22" executed="22" passed="22" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.1.0.0: Test execution started&#xD;
+Running all tests in F:\Projects\Workspaces\Velux\tests\VibeCodingDemo.IntegrationTests\bin\dev-n8\net10.0\VibeCodingDemo.IntegrationTests.dll&#xD;
+   NUnit3TestExecutor discovered 22 of 22 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 6.1.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

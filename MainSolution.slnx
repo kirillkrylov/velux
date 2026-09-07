@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="dev-n8" />
+    <BuildType Name="dev-nf" />
+  </Configurations>
+  <Project Path="packages\VibeCodingDemo\Files\VibeCodingDemo.csproj" />
+  <Project Path="tests\VibeCodingDemo\VibeCodingDemo.Tests.csproj" />
+  <Project Path="tests\VibeCodingDemo.IntegrationTests\VibeCodingDemo.IntegrationTests.csproj" />
+</Solution>
