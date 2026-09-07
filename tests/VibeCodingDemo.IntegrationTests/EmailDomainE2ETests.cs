@@ -18,10 +18,10 @@ namespace VibeCodingDemo.IntegrationTests;
 [TestFixture, NonParallelizable, AllureNUnit]
 [AllureSuite("Contact email domain policy — live Creatio")]
 public class EmailDomainE2ETests {
-    private const string Setting = "UsrProhibitedEmailDomains";
+    private const string DomainLookup = "UsrProhibitedEmailDomain";
     private const string EmailType = "ee1c85c3-cfcb-df11-9b2a-001d60e938c6";
     private HttpClient _client;
-    private string _originalDomains;
+    private JsonArray _originalDomains;
     private string _phoneType;
     private readonly List<(string Entity, Guid Id)> _records = new();
 
@@ -42,12 +42,7 @@ public class EmailDomainE2ETests {
             string csrf = cookies.GetCookies(settings.Url)["BPMCSRF"]?.Value;
             if (csrf != null) { _client.DefaultRequestHeaders.Add("BPMCSRF", csrf); }
         }
-        using var settingsResponse = await _client.PostAsJsonAsync("DataService/json/SyncReply/QuerySysSettings", new {
-            sysSettingsNameCollection = new[] { Setting }
-        });
-        settingsResponse.EnsureSuccessStatusCode();
-        var settingsBody = JsonNode.Parse(await settingsResponse.Content.ReadAsStringAsync());
-        _originalDomains = settingsBody["values"][Setting]["value"].GetValue<string>();
+        _originalDomains = await Rows(DomainLookup + "?$select=Id,Name,Description");
         JsonArray types = await Rows("CommunicationType?$select=Id&$filter=Name eq 'Mobile phone'");
         types.Count.Should().BeGreaterThan(0);
         _phoneType = types[0]["Id"].GetValue<string>();
@@ -62,7 +57,7 @@ public class EmailDomainE2ETests {
     [TearDown]
     public async Task Cleanup() {
         // Restore policy first, then remove only IDs allocated by this test.
-        try { await SetDomains(_originalDomains); }
+        try { await SetLookupRows(_originalDomains); }
         finally {
             foreach (var record in _records.AsEnumerable().Reverse()) {
                 using var response = await _client.DeleteAsync($"odata/{record.Entity}({record.Id})");
@@ -74,14 +69,27 @@ public class EmailDomainE2ETests {
     [OneTimeTearDown]
     public void Disconnect() => _client?.Dispose();
 
-    [AllureStep("Configure the prohibited domain list")]
+    [AllureStep("Configure prohibited domains through regular lookup rows")]
     private async Task SetDomains(string value) {
-        using var response = await _client.PostAsJsonAsync("DataService/json/SyncReply/PostSysSettingsValues", new {
-            isPersonal = false, sysSettingsValues = new Dictionary<string, string> { [Setting] = value }
-        });
-        response.EnsureSuccessStatusCode();
-        var body = JsonNode.Parse(await response.Content.ReadAsStringAsync());
-        body["saveResult"][Setting].GetValue<bool>().Should().BeTrue();
+        var rows = new JsonArray();
+        foreach (string name in value.Split(';', StringSplitOptions.RemoveEmptyEntries).Select(s => s.Trim())) {
+            rows.Add(new JsonObject { ["Id"] = Guid.NewGuid().ToString(), ["Name"] = name, ["Description"] = "" });
+        }
+        await SetLookupRows(rows);
+    }
+
+    private async Task SetLookupRows(JsonArray desiredRows) {
+        JsonArray current = await Rows(DomainLookup + "?$select=Id,Name,Description");
+        foreach (JsonNode row in current) {
+            if (desiredRows.Any(d => d["Id"].ToString() == row["Id"].ToString() && d["Name"].ToString() == row["Name"].ToString())) { continue; }
+            using var deleted = await _client.DeleteAsync($"odata/{DomainLookup}({row["Id"]})");
+            deleted.EnsureSuccessStatusCode();
+        }
+        foreach (JsonNode row in desiredRows) {
+            if (current.Any(c => c["Id"].ToString() == row["Id"].ToString() && c["Name"].ToString() == row["Name"].ToString())) { continue; }
+            using var created = await _client.PostAsJsonAsync("odata/" + DomainLookup, row);
+            created.EnsureSuccessStatusCode();
+        }
     }
 
     private async Task<JsonArray> Rows(string query) {
@@ -201,5 +209,27 @@ public class EmailDomainE2ETests {
         AllureApi.AddAttachment("DataService validation response", "application/json", System.Text.Encoding.UTF8.GetBytes(body));
         body.Should().Contain("prohibited").And.Contain("gmail.com");
         (await Read("Contact", id)).Should().BeNull();
+    }
+
+    [Test]
+    [AllureDescription("Adding, editing and deleting ordinary lookup rows immediately changes Contact validation.")]
+    public async Task LookupRowChangesTakeEffectWithoutRestart() {
+        Guid contact = await CreateContact("person@blocked.example");
+        Guid domain = Guid.NewGuid();
+        (await Write(HttpMethod.Post, DomainLookup, domain, new() { ["Name"] = "blocked.example" })).Should().BeTrue();
+        (await Write(HttpMethod.Patch, "Contact", contact, new() { ["Name"] = "Blocked by new lookup row" })).Should().BeFalse();
+        (await Write(HttpMethod.Patch, DomainLookup, domain, new() { ["Name"] = "other.example" })).Should().BeTrue();
+        (await Write(HttpMethod.Patch, "Contact", contact, new() { ["Name"] = "Allowed after lookup edit" })).Should().BeTrue();
+        (await Write(HttpMethod.Patch, DomainLookup, domain, new() { ["Name"] = "blocked.example" })).Should().BeTrue();
+        using var deleted = await _client.DeleteAsync($"odata/{DomainLookup}({domain})");
+        deleted.EnsureSuccessStatusCode();
+        (await Write(HttpMethod.Patch, "Contact", contact, new() { ["Name"] = "Allowed after lookup removal" })).Should().BeTrue();
+    }
+
+    [Test]
+    public async Task LookupIsRegisteredForStandardAdministration() {
+        var rows = await Rows("Lookup?$select=Name,SysEntitySchemaUId&$filter=SysEntitySchemaUId eq 397c249d-5799-4db1-863d-ecf47ad96059");
+        rows.Should().ContainSingle();
+        rows[0]["Name"].GetValue<string>().Should().Be("Prohibited email domains");
     }
 }

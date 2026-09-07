@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.9722" branch-rate="0.9423" version="1.9" timestamp="1788757236" lines-covered="105" lines-valid="108" branches-covered="49" branches-valid="52">
+<coverage line-rate="0.9911" branch-rate="0.9285" version="1.9" timestamp="1788758201" lines-covered="112" lines-valid="113" branches-covered="52" branches-valid="56">
   <sources>
     <source>F:\Projects\Workspaces\Velux\packages\VibeCodingDemo\Files\src\cs\</source>
   </sources>
   <packages>
-    <package name="VibeCodingDemo" line-rate="0.9722" branch-rate="0.9423" complexity="63">
+    <package name="VibeCodingDemo" line-rate="0.9911" branch-rate="0.9285" complexity="65">
       <classes>
         <class name="VibeCodingDemoApp.EntryPoints.EntityEventListeners.EmailDomainEntityEventListener" filename="EntryPoints\EntityEventListeners\ContactEntityEventListener.cs" line-rate="0.9629000000000001" branch-rate="1" complexity="9">
           <methods>
@@ -300,129 +300,153 @@
             <line number="21" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="VibeCodingDemoApp.EmailDomains.CreatioEmailDomainData" filename="EmailDomains\CreatioEmailDomainData.cs" line-rate="0.9047" branch-rate="0.5" complexity="9">
+        <class name="VibeCodingDemoApp.EmailDomains.CreatioEmailDomainData" filename="EmailDomains\CreatioEmailDomainData.cs" line-rate="1" branch-rate="0.5" complexity="8">
           <methods>
-            <method name="ReadDomains" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="11" hits="0" branch="False" />
-                <line number="12" hits="0" branch="False" />
-              </lines>
-            </method>
             <method name="Query" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="3" branch="False" />
-                <line number="17" hits="3" branch="False" />
-                <line number="18" hits="3" branch="False" />
+                <line number="21" hits="4" branch="False" />
+                <line number="22" hits="4" branch="False" />
+                <line number="23" hits="4" branch="False" />
               </lines>
             </method>
             <method name="ReadContactEmail" signature="(System.Guid)" line-rate="1" branch-rate="0.5" complexity="2">
               <lines>
-                <line number="20" hits="1" branch="False" />
-                <line number="21" hits="1" branch="False" />
-                <line number="22" hits="1" branch="False" />
-                <line number="23" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="25" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="True" condition-coverage="50% (1/2)">
                   <conditions>
                     <condition number="44" type="jump" coverage="50%" />
                   </conditions>
                 </line>
-                <line number="24" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
               </lines>
             </method>
             <method name="ReadCommunication" signature="(System.Guid)" line-rate="1" branch-rate="0.5" complexity="4">
               <lines>
-                <line number="36" hits="1" branch="False" />
-                <line number="37" hits="1" branch="False" />
-                <line number="38" hits="1" branch="False" />
-                <line number="39" hits="1" branch="False" />
-                <line number="40" hits="1" branch="False" />
-                <line number="41" hits="1" branch="True" condition-coverage="50% (2/4)">
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="1" branch="False" />
+                <line number="45" hits="1" branch="False" />
+                <line number="46" hits="1" branch="True" condition-coverage="50% (2/4)">
                   <conditions>
                     <condition number="63" type="jump" coverage="50%" />
                     <condition number="87" type="jump" coverage="50%" />
                   </conditions>
                 </line>
-                <line number="42" hits="1" branch="False" />
-                <line number="43" hits="1" branch="False" />
-                <line number="44" hits="1" branch="False" />
-                <line number="45" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="49" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Terrasoft.Core.UserConnection)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="12" branch="False" />
+                <line number="10" hits="16" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="16" hits="3" branch="False" />
-            <line number="17" hits="3" branch="False" />
-            <line number="18" hits="3" branch="False" />
-            <line number="20" hits="1" branch="False" />
-            <line number="21" hits="1" branch="False" />
-            <line number="22" hits="1" branch="False" />
-            <line number="23" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="21" hits="4" branch="False" />
+            <line number="22" hits="4" branch="False" />
+            <line number="23" hits="4" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="True" condition-coverage="50% (1/2)">
               <conditions>
                 <condition number="44" type="jump" coverage="50%" />
               </conditions>
             </line>
-            <line number="24" hits="1" branch="False" />
-            <line number="36" hits="1" branch="False" />
-            <line number="37" hits="1" branch="False" />
-            <line number="38" hits="1" branch="False" />
-            <line number="39" hits="1" branch="False" />
-            <line number="40" hits="1" branch="False" />
-            <line number="41" hits="1" branch="True" condition-coverage="50% (2/4)">
+            <line number="29" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="1" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="46" hits="1" branch="True" condition-coverage="50% (2/4)">
               <conditions>
                 <condition number="63" type="jump" coverage="50%" />
                 <condition number="87" type="jump" coverage="50%" />
               </conditions>
             </line>
-            <line number="42" hits="1" branch="False" />
-            <line number="43" hits="1" branch="False" />
-            <line number="44" hits="1" branch="False" />
-            <line number="45" hits="1" branch="False" />
-            <line number="10" hits="12" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="49" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+            <line number="10" hits="16" branch="False" />
           </lines>
         </class>
         <class name="VibeCodingDemoApp.EmailDomains.CreatioEmailDomainData/&lt;ReadCommunicationEmails&gt;d__5" filename="EmailDomains\CreatioEmailDomainData.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="26" hits="1" branch="False" />
-                <line number="27" hits="1" branch="False" />
-                <line number="28" hits="1" branch="False" />
-                <line number="29" hits="1" branch="False" />
-                <line number="30" hits="1" branch="False" />
-                <line number="31" hits="9" branch="True" condition-coverage="100% (2/2)">
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="9" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="308" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="32" hits="2" branch="False" />
-                <line number="33" hits="2" branch="False" />
-                <line number="34" hits="1" branch="False" />
+                <line number="37" hits="2" branch="False" />
+                <line number="38" hits="2" branch="False" />
+                <line number="39" hits="1" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="26" hits="1" branch="False" />
-            <line number="27" hits="1" branch="False" />
-            <line number="28" hits="1" branch="False" />
-            <line number="29" hits="1" branch="False" />
-            <line number="30" hits="1" branch="False" />
-            <line number="31" hits="9" branch="True" condition-coverage="100% (2/2)">
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="9" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="308" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="32" hits="2" branch="False" />
-            <line number="33" hits="2" branch="False" />
-            <line number="34" hits="1" branch="False" />
+            <line number="37" hits="2" branch="False" />
+            <line number="38" hits="2" branch="False" />
+            <line number="39" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="VibeCodingDemoApp.EmailDomains.EmailDomainPolicy" filename="EmailDomains\EmailDomainPolicy.cs" line-rate="1" branch-rate="1" complexity="14">
+        <class name="VibeCodingDemoApp.EmailDomains.CreatioEmailDomainData/&lt;ReadDomains&gt;d__2" filename="EmailDomains\CreatioEmailDomainData.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="11" hits="1" branch="False" />
+                <line number="12" hits="1" branch="False" />
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="9" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="201" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="15" hits="2" branch="False" />
+                <line number="16" hits="2" branch="False" />
+                <line number="17" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="1" branch="False" />
+            <line number="12" hits="1" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="9" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="201" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="17" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="VibeCodingDemoApp.EmailDomains.EmailDomainPolicy" filename="EmailDomains\EmailDomainPolicy.cs" line-rate="1" branch-rate="0.9285" complexity="15">
           <methods>
             <method name="get_IsEmpty" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -453,29 +477,33 @@
                 <line number="26" hits="46" branch="False" />
               </lines>
             </method>
-            <method name="Normalize" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
+            <method name="Normalize" signature="(System.String)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
                 <line number="28" hits="137" branch="False" />
-                <line number="29" hits="137" branch="False" />
+                <line number="29" hits="137" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="3" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
                 <line number="31" hits="274" branch="False" />
                 <line number="32" hits="12" branch="False" />
                 <line number="33" hits="137" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(System.String)" line-rate="1" branch-rate="1" complexity="6">
+            <method name=".ctor" signature="(System.Collections.Generic.IEnumerable`1&lt;System.String&gt;)" line-rate="1" branch-rate="0.8332999999999999" complexity="6">
               <lines>
                 <line number="8" hits="46" branch="False" />
                 <line number="10" hits="92" branch="False" />
-                <line number="11" hits="429" branch="True" condition-coverage="100% (4/4)">
+                <line number="11" hits="429" branch="True" condition-coverage="75% (3/4)">
                   <conditions>
-                    <condition number="27" type="jump" coverage="100%" />
-                    <condition number="114" type="jump" coverage="100%" />
+                    <condition number="27" type="jump" coverage="50%" />
+                    <condition number="93" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="12" hits="97" branch="False" />
                 <line number="13" hits="379" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="88" type="jump" coverage="100%" />
+                    <condition number="69" type="jump" coverage="100%" />
                   </conditions>
                 </line>
                 <line number="14" hits="97" branch="False" />
@@ -506,22 +534,26 @@
             </line>
             <line number="26" hits="46" branch="False" />
             <line number="28" hits="137" branch="False" />
-            <line number="29" hits="137" branch="False" />
+            <line number="29" hits="137" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="3" type="jump" coverage="100%" />
+              </conditions>
+            </line>
             <line number="31" hits="274" branch="False" />
             <line number="32" hits="12" branch="False" />
             <line number="33" hits="137" branch="False" />
             <line number="8" hits="46" branch="False" />
             <line number="10" hits="92" branch="False" />
-            <line number="11" hits="429" branch="True" condition-coverage="100% (4/4)">
+            <line number="11" hits="429" branch="True" condition-coverage="75% (3/4)">
               <conditions>
-                <condition number="27" type="jump" coverage="100%" />
-                <condition number="114" type="jump" coverage="100%" />
+                <condition number="27" type="jump" coverage="50%" />
+                <condition number="93" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="12" hits="97" branch="False" />
             <line number="13" hits="379" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="88" type="jump" coverage="100%" />
+                <condition number="69" type="jump" coverage="100%" />
               </conditions>
             </line>
             <line number="14" hits="97" branch="False" />

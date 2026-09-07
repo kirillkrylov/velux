@@ -4,7 +4,7 @@ using Terrasoft.Core.Entities;
 
 namespace VibeCodingDemoApp.EmailDomains {
     public interface IEmailDomainData {
-        string ReadDomains();
+        IEnumerable<string> ReadDomains();
         string ReadContactEmail(Guid contactId);
         IEnumerable<string> ReadCommunicationEmails(Guid contactId);
         CommunicationEmail ReadCommunication(Guid communicationId);
@@ -16,7 +16,7 @@ namespace VibeCodingDemoApp.EmailDomains {
     }
 
     public sealed class ContactEmailDomainValidator {
-        public const string SettingCode = "UsrProhibitedEmailDomains";
+        public const string DomainSchemaName = "UsrProhibitedEmailDomain";
         // Creatio CommunicationTypeConsts.EmailId (CrtBaseConsts).
         public static readonly Guid EmailTypeId = new Guid("ee1c85c3-cfcb-df11-9b2a-001d60e938c6");
         private readonly IEmailDomainData _data;

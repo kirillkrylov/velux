@@ -25,12 +25,12 @@ namespace VibeCodingDemo.Tests {
         [TestCase(null, null)]
         [TestCase("person@", null)]
         public void MatchesOnlyTheNormalizedDomain(string email, string expected) {
-            new EmailDomainPolicy(" GMAIL.COM ; yahoo.com, gmail.com\r\n").GetBlockedDomain(email).Should().Be(expected);
+            new EmailDomainPolicy(new[] { " GMAIL.COM ", "yahoo.com", "gmail.com" }).GetBlockedDomain(email).Should().Be(expected);
         }
 
-        [TestCase(null)] [TestCase("")] [TestCase(" ; ,\r\n ")]
+        [TestCase(null)] [TestCase("")] [TestCase("   ")]
         public void EmptyListAllowsEveryDomain(string list) {
-            var policy = new EmailDomainPolicy(list);
+            var policy = new EmailDomainPolicy(new[] { list });
             policy.IsEmpty.Should().BeTrue();
             policy.GetBlockedDomain("person@gmail.com").Should().BeNull();
         }
@@ -40,7 +40,7 @@ namespace VibeCodingDemo.Tests {
         [TestCase("gmail.com.", "person@gmail.com")]
         [TestCase("bad domain", "person@bad domain")]
         public void NormalizesBothSides(string list, string email) {
-            new EmailDomainPolicy(list).GetBlockedDomain(email).Should().NotBeNull();
+            new EmailDomainPolicy(new[] { list }).GetBlockedDomain(email).Should().NotBeNull();
         }
     }
 
@@ -58,7 +58,7 @@ namespace VibeCodingDemo.Tests {
                 { "Number", DataValueType.ShortText }, { "CommunicationTypeId", DataValueType.Guid }
             });
             _data = Substitute.For<IEmailDomainData>();
-            _data.ReadDomains().Returns("gmail.com; yahoo.com");
+            _data.ReadDomains().Returns(new[] { "gmail.com", "yahoo.com" });
             _data.ReadCommunicationEmails(Arg.Any<Guid>()).Returns(Array.Empty<string>());
             _data.ReadCommunication(Arg.Any<Guid>()).Returns(new CommunicationEmail { TypeId = ContactEmailDomainValidator.EmailTypeId, Number = "old@gmail.com" });
             _validator = new ContactEmailDomainValidator(_data);
@@ -95,7 +95,7 @@ namespace VibeCodingDemo.Tests {
 
         [Test]
         public void EmptyPolicyDoesNotQueryContactData() {
-            _data.ReadDomains().Returns("");
+            _data.ReadDomains().Returns(Array.Empty<string>());
             _validator.Validate(Contact("bad@gmail.com")).Should().BeNull();
             _data.DidNotReceive().ReadCommunicationEmails(Arg.Any<Guid>());
         }

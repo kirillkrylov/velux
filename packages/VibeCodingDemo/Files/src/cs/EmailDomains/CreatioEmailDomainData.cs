@@ -8,8 +8,13 @@ namespace VibeCodingDemoApp.EmailDomains {
     public sealed class CreatioEmailDomainData : IEmailDomainData {
         private readonly UserConnection _connection;
         public CreatioEmailDomainData(UserConnection connection) { _connection = connection; }
-        public string ReadDomains() => Terrasoft.Core.Configuration.SysSettings.GetValue(
-            _connection, ContactEmailDomainValidator.SettingCode, "");
+        public IEnumerable<string> ReadDomains() {
+            var query = Query(ContactEmailDomainValidator.DomainSchemaName);
+            query.AddColumn("Name");
+            foreach (Entity entity in query.GetEntityCollection(_connection)) {
+                yield return entity.GetTypedColumnValue<string>("Name");
+            }
+        }
 
         // Deliberately bypass record filtering for integrity checks: hidden email rows must
         // not allow a Contact to evade the policy. No row contents are returned to callers.

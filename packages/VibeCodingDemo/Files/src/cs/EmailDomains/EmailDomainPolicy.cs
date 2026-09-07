@@ -7,8 +7,8 @@ namespace VibeCodingDemoApp.EmailDomains {
     public sealed class EmailDomainPolicy {
         private readonly HashSet<string> _domains = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-        public EmailDomainPolicy(string configuredDomains) {
-            foreach (string item in (configuredDomains ?? "").Split(new[] { ';', ',', '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)) {
+        public EmailDomainPolicy(IEnumerable<string> configuredDomains) {
+            foreach (string item in configuredDomains ?? Array.Empty<string>()) {
                 string domain = Normalize(item);
                 if (domain.Length > 0) { _domains.Add(domain); }
             }
@@ -26,7 +26,7 @@ namespace VibeCodingDemoApp.EmailDomains {
         }
 
         private static string Normalize(string value) {
-            string domain = value.Trim().TrimEnd('.');
+            string domain = (value ?? "").Trim().TrimEnd('.');
             // IDN and its ASCII representation identify the same DNS domain.
             try { return new IdnMapping().GetAscii(domain).ToLowerInvariant(); }
             catch (ArgumentException) { return domain.ToLowerInvariant(); }

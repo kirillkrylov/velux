@@ -1,0 +1,5 @@
+<Project>
+	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/VibeCodingDemo/Schemas/UsrProhibitedEmailDomain/UsrProhibitedEmailDomain.cs" Condition="Exists('$(PkgPath)/VibeCodingDemo/Schemas/UsrProhibitedEmailDomain/UsrProhibitedEmailDomain.cs')" />
+	</ItemGroup>
+</Project>
