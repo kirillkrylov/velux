@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="VibeCodingDemoLocalizableStrings" />
+			<Item Name="LocalizableStrings.PackageLevelExample.Value" Value="Package-level localizable value" />
+		</Items>
+	</Group>
+</Resources>

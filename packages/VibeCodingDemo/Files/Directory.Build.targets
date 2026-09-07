@@ -1,0 +1,19 @@
+<Project>
+    <ItemGroup Condition="'$(PkgPath)' != ''">
+        <Compile Remove="$(PkgPath)/VibeCodingDemo/Assemblies/**" />
+        <Compile Remove="$(PkgPath)/VibeCodingDemo/Data/**" />
+        <Compile Remove="$(PkgPath)/VibeCodingDemo/SqlScripts/**" />
+        <Compile Remove="$(PkgPath)/VibeCodingDemo/Schemas\**" />
+        <Compile Remove="$(PkgPath)/VibeCodingDemo/Resources/**" />
+        <EmbeddedResource Remove="$(PkgPath)/VibeCodingDemo/Assemblies/**" />
+        <EmbeddedResource Remove="$(PkgPath)/VibeCodingDemo/Data/**" />
+        <EmbeddedResource Remove="$(PkgPath)/VibeCodingDemo/SqlScripts/**" />
+        <EmbeddedResource Remove="$(PkgPath)/VibeCodingDemo/Schemas/**" />
+        <EmbeddedResource Remove="$(PkgPath)/VibeCodingDemo/Resources/**" />
+        <None Remove="$(PkgPath)/VibeCodingDemo/Assemblies/**" />
+        <None Remove="$(PkgPath)/VibeCodingDemo/Data/**" />
+        <None Remove="$(PkgPath)/VibeCodingDemo/SqlScripts/**" />
+        <None Remove="$(PkgPath)/VibeCodingDemo/Schemas/**" />
+        <None Remove="$(PkgPath)/VibeCodingDemo/Resources/**" />
+    </ItemGroup>
+</Project>
